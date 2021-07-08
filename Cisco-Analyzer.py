@@ -3,7 +3,7 @@
 # Author: Github: sonicCrypt0r (https://github.com/sonicCrypt0r)
 # Description: This Script Is For Saving Cisco Running Configs And Show Commands
 
-VERSION = 0.1
+VERSION = 0.11
 
 # Place where folders will generate
 WORKING_DIR = ''
@@ -105,7 +105,7 @@ def checkUpdate():
 
     # Download newest version of 'Cisco-Device-Analyzer.py' from Github with the name 'Cisco-Device-Analyzer_new.py'
     url = \
-        'https://raw.githubusercontent.com/sonicCrypt0r/Cisco-Device-Analyzer/main/Cisco-Device-Analyzer.py' #Location Where Updated Source Code Will Be
+        'https://raw.githubusercontent.com/sonicCrypt0r/Cisco-Analyzer/main/Cisco-Analyzer.py' #Location Where Updated Source Code Will Be
     sprint(pStatus('GOOD') + 'Checking For Updates... ')
     r = requests.get(url, verify=False)
     open(newScriptName, 'wb').write(r.content)
